@@ -14,10 +14,13 @@ import HospitalityIcon from "../../Images/icons8-service-bell-100.png"
 import ShapeFour from "../../Images/shape4.png"
 import {useNavigate} from "react-router-dom";
 import DayAheadPriceChart from "./dayAheadPrice/dayAheadPriceChart";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from '../../LanguageSwitcher.js'
+import { I18nProvider } from "../../i18nContext";
 
 const WebHomePage = () => {
 
-    
+    const{t} = useTranslation()
     const navigate = useNavigate();
     //##########PLANS##########//
     const [isIndustrialHovered, setIsIndustrialHovered] = useState(false)
@@ -70,6 +73,7 @@ const WebHomePage = () => {
     //##########LOGIN##########//
 
     return (
+        <I18nProvider >
         <div style={{overflowX: "hidden"}}>
             <div className="HomePage-Overlay">
                 <div className="HomePage-Navbar">
@@ -83,13 +87,14 @@ const WebHomePage = () => {
                                 <div className="HomePage-Navbar-Items-Dashboard-Text">Dashboard</div>
                             </div>
                         </div>
+                        <LanguageSwitcher/>
                     </div>
                 </div>
                 <div className="HomePage-Overlay-Content">
                     <div className="HomePage-Overlay-Content-Element">
                         <div className="HomePage-Overlay-Text">
                             <div className="HomePage-Overlay-Text-Title"> Firn <span className="HomePage-Overlay-Text-Title-Color">Energy</span></div>
-                            <div className="HomePage-Overlay-Text-Desc">Smart energy saving technologie. Maximize your savings thanks to the smartgridOne controller</div>
+                            <div className="HomePage-Overlay-Text-Desc">{t("HoofdtekstDesc")}</div>
                             <div className="HomePage-Overlay-Text-Button-Container">
                                 <div><button className="HomePage-Overlay-text-Button">Contact us</button></div>
                             </div>
@@ -209,6 +214,7 @@ const WebHomePage = () => {
         
 
         </div>
+        </I18nProvider>
         
             
     )
