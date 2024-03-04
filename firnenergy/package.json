@@ -1,0 +1,58 @@
+{
+  "name": "firnenergy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@auth0/auth0-react": "^2.2.4",
+    "@canvasjs/charts": "^3.7.39",
+    "@canvasjs/react-charts": "^1.0.0",
+    "@react-pdf/renderer": "^3.3.8",
+    "auth0-js": "^9.24.0",
+    "axios": "^1.6.7",
+    "date-fns": "^3.3.1",
+    "eslint-plugin-flowtype": "^8.0.3",
+    "flag-icons": "^7.0.2",
+    "html-react-parser": "^5.0.6",
+    "i18next": "^23.7.6",
+    "i18next-browser-languagedetector": "^7.2.0",
+    "install": "^0.13.0",
+    "npm": "^10.4.0",
+    "pjson": "^1.0.9",
+    "prop-types": "^15.6.0",
+    "react": "^18.0.0",
+    "react-auth-kit": "^3.0.0-alpha.44",
+    "react-dom": "^18.0.0",
+    "react-i18next": "^13.5.0",
+    "react-icons": "^4.12.0",
+    "react-json-tree": "^0.18.0",
+    "react-py": "^1.10.6",
+    "react-router-dom": "^6.20.0",
+    "react-scale-text": "^1.2.2",
+    "react-scripts": "^5.0.1",
+    "recharts": "^2.10.1",
+    "semantic-ui-css": "^2.5.0",
+    "semantic-ui-react": "^2.1.5",
+    "smoothscroll-polyfill": "^0.4.4",
+    "web-vitals": "^3.5.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
