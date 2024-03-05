@@ -15,12 +15,12 @@ import ShapeFour from "../../Images/shape4.png"
 import {useNavigate} from "react-router-dom";
 import DayAheadPriceChart from "./dayAheadPrice/dayAheadPriceChart";
 import { useTranslation } from "react-i18next";
-import LanguageSwitcher from '../../LanguageSwitcher.js'
-import { I18nProvider } from "../../i18nContext";
+import LanguageSelector from "../../languageSelector.jsx"
 
 const WebHomePage = () => {
 
-    const{t} = useTranslation()
+    const {t} = useTranslation();
+
     const navigate = useNavigate();
     //##########PLANS##########//
     const [isIndustrialHovered, setIsIndustrialHovered] = useState(false)
@@ -73,7 +73,6 @@ const WebHomePage = () => {
     //##########LOGIN##########//
 
     return (
-        <I18nProvider >
         <div style={{overflowX: "hidden"}}>
             <div className="HomePage-Overlay">
                 <div className="HomePage-Navbar">
@@ -87,7 +86,10 @@ const WebHomePage = () => {
                                 <div className="HomePage-Navbar-Items-Dashboard-Text">Dashboard</div>
                             </div>
                         </div>
-                        <LanguageSwitcher/>
+                        <div style={{height: "30px", width:"2px", backgroundColor: "white", marginRight: "-30px", marginLeft: "-30px"}}></div>
+                        <div>
+                            <LanguageSelector></LanguageSelector>
+                        </div>
                     </div>
                 </div>
                 <div className="HomePage-Overlay-Content">
@@ -214,7 +216,6 @@ const WebHomePage = () => {
         
 
         </div>
-        </I18nProvider>
         
             
     )

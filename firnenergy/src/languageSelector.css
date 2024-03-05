@@ -1,0 +1,60 @@
+.Language-Burger-Menu:hover {
+    cursor: pointer;
+}
+
+
+
+
+.Language-Burger-Menu-DropDown {
+    position: absolute;
+    right: 40px;
+    width: 110px;
+    margin-top: 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    padding: 5px 0px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: 1px solid #CCCCCC;
+}
+
+.Language-Burger-Menu-DropDown-Item {
+    color: black;
+    display: flex;
+    justify-content: center;
+
+
+    width: 95%;
+}
+
+.Language-Burger-Menu-DropDown-Item:hover {
+    background-color:  #b4b3b3;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+    cursor: pointer;
+}
+
+/* .Language-Burger-Menu-DropDown-Item {
+    padding: 5px 20px;
+
+    display: flex;
+}
+
+.Language-Burger-Menu-DropDown-Item:hover {
+    background-color: #926348;
+    border-radius: 25px;
+
+    cursor: pointer;
+}
+
+.Language-Burger-Menu-Icon-Container {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+} */
