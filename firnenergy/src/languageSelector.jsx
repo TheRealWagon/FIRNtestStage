@@ -36,7 +36,7 @@ const LanguageSelector = () => {
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
-    console.log(i18n);
+    console.log(i18n.language);
     console.log("this runs");
   })
 
@@ -56,7 +56,7 @@ const LanguageSelector = () => {
 
   return (
     <>
-        {/* <div className="Language-Burger-Menu" onClick={toggleMenu} style={{width:"62.5px", height:"25px", display:"flex", alignItems:"center", justifyContent: "space-between"}}>
+        <div className="Language-Burger-Menu" onClick={toggleMenu} style={{width:"62.5px", height:"25px", display:"flex", alignItems:"center", justifyContent: "space-between"}}>
             <div style={{width:"25px", display:"flex", alignItems:"center"}}>{countries.find((lng) => lng.code === i18n.language).flag}</div><div style={{fontSize:"1.2rem", color:"white"}}>{countries.find((lng) => lng.code === i18n.language).country_code}</div>
         </div>
         {isOpen && (
@@ -75,7 +75,7 @@ const LanguageSelector = () => {
                     </div>
                 ))}
             </div>
-        )} */}
+        )}
     </>
   );
 };

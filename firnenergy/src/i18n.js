@@ -7,7 +7,6 @@ const fallbackLng = ["en"];
 
 i18n
   .use(Backend) // used to load data from othe directory
-  .use(LanguageDetector) // detects the current language
   .use(initReactI18next) // passes i18n down to react-i18next
   .init({
     Backend: {
