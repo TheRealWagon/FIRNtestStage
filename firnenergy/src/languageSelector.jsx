@@ -1,5 +1,5 @@
 import { Menu, Transition } from "@headlessui/react";
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { GlobeAltIcon } from "@heroicons/react/24/outline";
 import { GrLanguage } from "react-icons/gr";
@@ -35,6 +35,11 @@ let countries = [
 const LanguageSelector = () => {
   const { t, i18n } = useTranslation();
 
+  useEffect(() => {
+    console.log(i18n);
+    console.log("this runs");
+  })
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -51,7 +56,7 @@ const LanguageSelector = () => {
 
   return (
     <>
-        <div className="Language-Burger-Menu" onClick={toggleMenu} style={{width:"62.5px", height:"25px", display:"flex", alignItems:"center", justifyContent: "space-between"}}>
+        {/* <div className="Language-Burger-Menu" onClick={toggleMenu} style={{width:"62.5px", height:"25px", display:"flex", alignItems:"center", justifyContent: "space-between"}}>
             <div style={{width:"25px", display:"flex", alignItems:"center"}}>{countries.find((lng) => lng.code === i18n.language).flag}</div><div style={{fontSize:"1.2rem", color:"white"}}>{countries.find((lng) => lng.code === i18n.language).country_code}</div>
         </div>
         {isOpen && (
@@ -70,7 +75,7 @@ const LanguageSelector = () => {
                     </div>
                 ))}
             </div>
-        )}
+        )} */}
     </>
   );
 };
