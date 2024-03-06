@@ -16,6 +16,7 @@ function App() {
   return (
       <Routes>
           <Route path="/" element={<WebsiteHomePage />} />
+          <Route path="/residentieel" element={<Residentieel/>} />
       </Routes>
   );
 }
