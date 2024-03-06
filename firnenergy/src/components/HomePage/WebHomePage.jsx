@@ -98,7 +98,7 @@ const WebHomePage = () => {
                             <div className="HomePage-Overlay-Text-Title"> Firn <span className="HomePage-Overlay-Text-Title-Color">Energy</span></div>
                             <div className="HomePage-Overlay-Text-Desc">{t("HoofdtekstDesc")}</div>
                             <div className="HomePage-Overlay-Text-Button-Container">
-                                <div><button className="HomePage-Overlay-text-Button">{t("HoofdtekstKnop")}</button></div>
+                                <button className="HomePage-Overlay-text-Button">{t("HoofdtekstKnop")}</button>
                             </div>
                         </div>
                     </div>

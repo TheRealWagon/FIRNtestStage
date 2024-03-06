@@ -128,13 +128,14 @@ a {
     color: white;
     font-family: Poppins;
     font-weight: bold;
+
+    padding: 5px 20px;
+
     font-size: 1.1rem;
 }
 
 .HomePage-Overlay-Text-Button-Container {
-    width: 25%;
-    height: 30px;
-    
+    width: fit-content;
     margin-top: 20px;
 
     display: flex;

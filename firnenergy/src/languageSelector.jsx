@@ -36,7 +36,6 @@ const LanguageSelector = () => {
   const { t, i18n } = useTranslation();
 
   const [isOpen, setIsOpen] = useState(false);
-  const [activeLng, setActiveLng] = useState("en"); //use cookies to save lng state
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -53,7 +52,7 @@ const LanguageSelector = () => {
   return (
     <>
         <div className="Language-Burger-Menu" onClick={toggleMenu} style={{width:"62.5px", height:"25px", display:"flex", alignItems:"center", justifyContent: "space-between"}}>
-            <div style={{width:"25px", display:"flex", alignItems:"center"}}>{countries.find((lng) => lng.code === activeLng).flag}</div><div style={{fontSize:"1.2rem", color:"white"}}>{countries.find((lng) => lng.code === activeLng).country_code}</div>
+            <div style={{width:"25px", display:"flex", alignItems:"center"}}>{countries.find((lng) => lng.code === i18n.language).flag}</div><div style={{fontSize:"1.2rem", color:"white"}}>{countries.find((lng) => lng.code === i18n.language).country_code}</div>
         </div>
         {isOpen && (
             <div
@@ -64,7 +63,6 @@ const LanguageSelector = () => {
                 {countries.map((lng) => (
                     <div className="Language-Burger-Menu-DropDown-Item" onClick={() => {
                         i18n.changeLanguage(lng.code);
-                        setActiveLng(lng.code);
                         setIsOpen(false);
                     }}>
                         <div style={{width:"25px", marginRight:"10px", display:"flex", alignItems:"center"}}>{lng.flag}</div>

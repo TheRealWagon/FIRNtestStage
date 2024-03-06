@@ -3,7 +3,7 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import Backend from "i18next-xhr-backend";
 import { initReactI18next } from "react-i18next";
 
-const fallbackLng = ["fr"];
+const fallbackLng = ["en"];
 
 i18n
   .use(Backend) // used to load data from othe directory
