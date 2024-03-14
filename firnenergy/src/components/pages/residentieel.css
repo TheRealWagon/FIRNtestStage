@@ -1,0 +1,46 @@
+
+.padding{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+body {
+  background-color: #683F29;
+}
+
+.kadertjesContainer {
+  display: flex;
+  flex-direction: row; 
+  align-items: flex-start;
+  justify-content: space-between; 
+  width: 100%;
+  padding: 5%;
+}
+
+.left-panels {
+  display: flex;
+  flex-direction: column;
+  width: 37.5%; 
+  margin-right: 20px; 
+}
+
+.large-panel {
+  display: flex;
+  flex-grow: 1; 
+  background-color: rgba(59, 37, 21, 1);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(104, 63, 41, 0.5);
+  height: auto; 
+  max-width: 37.5%; 
+  flex-direction: column;
+}

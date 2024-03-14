@@ -1,9 +1,6 @@
 {
-    "NavbarOverons":"Over ons",
-    "NavbarPlan":"Plannen",
-    "NavbarContact":"Contact",
     "HoofdtekstDesc": "Slimme energiebesparende technologie. Maximaliseer uw besparingen dankzij de smartgridOne-controller",
-    "HoofdtekstKnop": "Contacteer ons",
+    "HoofdstekstKnop": "Contacteer ons",
     "TitelMiddenstuk": "Wat is FirnEnergy.",
     "DescMiddenstuk": "FIRN Energy is een leidend bedrijf dat zich richt op de ontwikkeling van geavanceerde batterijoplossingen en energiebeheersystemen. Wij geloven in de kracht van energieopslag en de impact die dit kan hebben op de manier waarop we energie verbruiken en beheren. Onze missie is het bieden van duurzame en betrouwbare oplossingen voor energieopslag die de transitie naar een groenere toekomst ondersteunen.",
     "IndustrieelTitel": "Industrieel",
@@ -25,4 +22,4 @@
     "LijstKnop":"Details bekijken",
     "OnderstukTitel":"Op prijs gebaseerde beslissingen",
     "OnderstukDesc":"Op prijs gebaseerde beslissingen De Firncontroller neemt beslissingenop basis van realtime prijsgegevens door gebruik te maken van de day-ahead-prijs. Hierdoor weet hij wanneer u het beste energie kunt verkopen of inkopen, zodat u het maximale uit uw zonne-installatie haalt zonder dat alles op microniveau hoeft te beheren."
-}
+  }

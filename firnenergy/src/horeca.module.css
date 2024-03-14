@@ -1,0 +1,62 @@
+.pageContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.banner {
+  position: relative;
+  height: 200px;
+  background-color: #3E2723; /* Donkerbruin */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  border-radius: 20px;
+}
+
+.servicesSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding-bottom: 30px;
+}
+
+.serviceCard {
+  background-color: #583a2f; /* Lichtbruin */
+  height: 100px;
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.serviceCard:hover {
+  transform: translateY(-10px) scale(1.05)!important; /* Maakt het item groter bij hover */
+}
+
+.faqSection {
+  margin-top: 40px;
+}
+
+.faqTitle {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.faqItem {
+  margin-bottom: 10px;
+}
+
+.question {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}

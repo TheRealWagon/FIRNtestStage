@@ -3,7 +3,7 @@ import Logo from '../../Images/firnenergyLogo.png'
 import globeIcon from '../../Images/globe_icon.png'
 import userIcon from '../../Images/user_icon.png'
 import infoIcon from "../../Images/info_icon.png"
-import Authenticate from "../../api/authenticate"
+
 import { useEffect, useState } from 'react'
 import {Link} from "react-router-dom";
 import User from '../../api/user';
