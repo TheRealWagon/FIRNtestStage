@@ -60,3 +60,36 @@
   overflow: hidden;
   transition: max-height 0.3s ease;
 }
+/* Kleine apparaten (telefoons, 600px en lager) */
+@media only screen and (max-width: 600px) {
+  .servicesSection {
+    grid-template-columns: 1fr; /* Zet alle kaarten op één kolom */
+  }
+
+  .serviceCard {
+    height: auto; /* Maak de hoogte flexibel om de inhoud te passen */
+    padding: 15px; /* Verminder de padding voor kleinere schermen */
+  }
+
+  .banner, .faqTitle, .question {
+    font-size: 1.5rem; /* Maak de tekst kleiner voor betere leesbaarheid */
+  }
+}
+
+/* Middelgrote apparaten (tablets, 600px tot 900px) */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .servicesSection {
+    grid-template-columns: repeat(2, 1fr); /* Gebruik twee kolommen voor tablets */
+  }
+}
+
+/* Grote apparaten (desktops, 901px en hoger) */
+@media only screen and (min-width: 901px) {
+  .servicesSection {
+    grid-template-columns: repeat(3, 1fr); /* Behoud drie kolommen voor grote schermen */
+  }
+
+  .serviceCard {
+    padding: 20px; /* Grotere padding voor grotere schermen */
+  }
+}

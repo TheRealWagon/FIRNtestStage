@@ -44,6 +44,27 @@ body {
       width: 100%; 
       height: auto; 
     }
+    @media (max-width: 480px) {
+      .full-screen-image-residentieel{
+          height: 60vh; /* Minder hoogte op zeer kleine schermen */
+      }
+      .titel {
+          font-size: 1.2rem; /* Nog kleinere tekst */
+      }
+      /* Aanpassen van de paragraaftekst om beter in kleinere schermen te passen */
+      .full-screen-image-residentieel p {
+          font-size: 0.8rem;
+          padding: 0 10px; /* Geeft wat ruimte aan de zijkanten */
+      }
+    }
+    @media (max-width: 768px) {
+      .text-overlay {
+          padding: 10px; /* Minder padding op kleinere schermen */
+      }
+      .titel {
+          font-size: 1.5rem; /* Kleinere tekst op kleinere schermen */
+      }
+    }
 /* afbeeldingIndustrieel.js, tekst enz komt van de afbeeldingResidentieel*/  
 
 .full-screen-image-industrieel {
@@ -58,6 +79,19 @@ body {
     background-position: top center;
     transition: opacity 6s ease;
     overflow: visible; 
+}
+@media (max-width: 480px) {
+  .full-screen-image-industrieel {
+      height: 60vh; /* Minder hoogte op zeer kleine schermen */
+  }
+  .titel {
+      font-size: 1.2rem; /* Nog kleinere tekst */
+  }
+  /* Aanpassen van de paragraaftekst om beter in kleinere schermen te passen */
+  .full-screen-image-industrieel p {
+      font-size: 0.8rem;
+      padding: 0 10px; /* Geeft wat ruimte aan de zijkanten */
+  }
 }
     
 /* afbeeldingLandbouw.js, tekst enz komt van de afbeeldingResidentieel*/
@@ -74,6 +108,19 @@ body {
     background-position: top center;
     transition: opacity 6s ease;
     overflow: visible; 
+}
+@media (max-width: 480px) {
+  .full-screen-image-landbouw {
+      height: 60vh; /* Minder hoogte op zeer kleine schermen */
+  }
+  .titel {
+      font-size: 1.2rem; /* Nog kleinere tekst */
+  }
+  /* Aanpassen van de paragraaftekst om beter in kleinere schermen te passen */
+  .full-screen-image-landbouw p {
+      font-size: 0.8rem;
+      padding: 0 10px; /* Geeft wat ruimte aan de zijkanten */
+  }
 }
 
 /* afbeeldingHoreca.js, tekst enz komt van de afbeeldingResidentieel*/
@@ -92,25 +139,19 @@ body {
     overflow: visible; 
 }
 
-/*kadertje.js en kader2.js*/
-
-.kadertje {
-    flex-basis: 40%;
-    flex-wrap: nowrap;
-    display: flex;
-    align-items: center; 
-    justify-content: space-between;
-    width: 110%;
-    overflow: visible; 
-    margin: 2%;
-    background-color: rgba(59, 37, 21, 1);
-    position: relative;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(104, 63, 41, 0.5);
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 3%;
+@media (max-width: 480px) {
+  .full-screen-image-horeca {
+      height: 60vh; /* Minder hoogte op zeer kleine schermen */
   }
+  .titel {
+      font-size: 1.2rem; /* Nog kleinere tekst */
+  }
+  /* Aanpassen van de paragraaftekst om beter in kleinere schermen te passen */
+  .full-screen-image-horeca p {
+      font-size: 0.8rem;
+      padding: 0 10px; /* Geeft wat ruimte aan de zijkanten */
+  }
+}
 
 
 .tekstContainer{
@@ -210,29 +251,27 @@ p{
     max-width: 70%; /* Zorgt ervoor dat de afbeelding zich aanpast aan de container */
     height: auto;
   }
-/*kadergroot.js*/  
-.large-panel {
-    display: flex;
-    flex-direction: column; /* Zorgt ervoor dat items verticaal worden gestapeld */
-    background-color: rgba(59, 37, 21, 1);
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(104, 63, 41, 0.5);
-    margin: 14px;
-    text-align: center;
-    padding: 20px;
-    height: 1020px;
-    margin-right: 200px;
+  @media (max-width: 768px) {
+    .right-sections, .footer-section {
+      flex-direction: column; /* Stapelt de elementen verticaal onder elkaar */
+    }
   }
   
-  .large-panel img {
-    max-width: 100%;
-    height: auto; 
-    border-radius: 20px;
+  @media (max-width: 400px) {
+    .footer-container, .right-sections {
+      flex-direction: column;
+    }
+    .image-section img {
+      width: 100%; /* Zorgt ervoor dat de afbeelding zich aanpast aan de container breedte */
+      max-width: 200px; /* Optioneel, beperkt de maximale breedte van de afbeelding */
+      height: auto; /* Behoudt de aspect ratio van de afbeelding */
+    }
+    .left-section, .right-sections {
+      width: 100%; /* Zorgt ervoor dat deze secties de volledige breedte van de container innemen */
+    }
   }
-  
-  .plaats{
-    padding-top: 5%;
-  }
+
+
 /* middenstukIndustrieel.css */
 .kleur{
     background-color: rgb(70, 48, 33);
@@ -350,5 +389,259 @@ p{
     border-radius: 10px;
     margin-right: 20px;
   }
+  @media (max-width: 768px) {
+    .vierkant {
+      max-width: calc(50% - 20px); /* 2 vakken naast elkaar in plaats van 3 op middelgrote schermen */
+    }
+  }
+  
+  /* Responsief maken voor mobiele apparaten */
+  @media (max-width: 480px) {
+    .vierkanten-container {
+      flex-direction: column;
+    }
+  
+    .vierkant {
+      max-width: 100%; /* Zorgt ervoor dat de vakken de volledige breedte innemen op kleine schermen */
+    }
+  
+    .carousel-images img {
+      width: 100%; /* Zorgt ervoor dat afbeeldingen zich aanpassen aan de breedte van hun container */
+      max-width: 300px; /* Zorgt ervoor dat afbeeldingen niet te groot worden */
+    }
+  }
+  .vierkant h2, .vierkant p, .carousel-description p {
+    margin: 10px 0; /* Zorgt voor consistente marges */
+  }
+  
+  .vierkant h2 {
+    font-size: 1.2em; /* Basisgrootte, maar voel je vrij om dit aan te passen */
+  }
+  
+  .vierkant p, .carousel-description p {
+    font-size: 1em; /* Basisgrootte voor paragrafen */
+  }
+  
+  /* Aanpassen van tekstgrootte op tablets */
+  @media (max-width: 768px) {
+    .vierkant h2 {
+      font-size: 1.1em; /* Iets kleiner op tablets */
+    }
+  
+    .vierkant p, .carousel-description p {
+      font-size: 0.9em; /* Iets kleiner op tablets */
+    }
+  }
+  
+  /* Aanpassen van tekstgrootte op mobiele apparaten */
+  @media (max-width: 480px) {
+    .vierkant h2 {
+      font-size: 1em; /* Nog kleiner op mobiele apparaten */
+    }
+  
+    .vierkant p, .carousel-description p {
+      font-size: 0.8em; /* Nog kleiner op mobiele apparaten */
+    }
+  }
+  @media (max-width: 300px) {
+    html {
+      font-size: 12px;
+    }
+  
+    .vierkant h2, .carousel-description p {
+      font-size: 10px;
+    }
+  
+    .carousel-images button {
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 400px) {
+    .carousel-images img {
+        max-width: 100%; /* Zorgt ervoor dat afbeeldingen zich aanpassen aan de container */
+        height: auto; /* Behoudt de aspectratio van de afbeelding */
+        display: block; /* Verzekert dat de afbeelding altijd wordt getoond */
+    }
+
+    /* Verklein de grootte van knoppen om beter te passen */
+    .carousel-container button {
+        padding: 5px 10px; /* Minder padding */
+        font-size: 12px; /* Kleinere tekst */
+    }
+
+    /* Pas containerstijlen aan voor betere lay-out */
+    .carousel-container {
+        text-align: center; /* Centreert inhoud */
+        padding: 10px 0; /* Geeft enige ruimte boven en onder */
+    }
+
+    /* Optioneel: Verberg de knoppen op zeer kleine schermen voor een schoner uiterlijk */
+    .carousel-container button {
+        display: none; /* Verberg navigatieknoppen */
+    }
+}
+
+  
 
 /*middenstukLandbouw.js*/
+
+.container {
+  position: relative;
+  width: calc(33.333% - 40px); /* Aangepast om 3 items naast elkaar te passen met marge */
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px; /* Zorgt voor ruimte tussen de containers */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  background-color: rgba(68, 38, 21, 0.877);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center; /* Centreert de flex-items horizontaal */
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+
+.image {
+  display: block;
+  width: 80%; /* Of 100% als je wilt dat de afbeelding de volledige breedte inneemt */
+  height: auto;
+  transition: transform 0.5s ease;
+  object-fit: cover;
+  margin: 0 auto; /* Centreert de afbeelding horizontaal */
+}
+
+
+.text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease;
+}
+
+.container:hover .image {
+  transform: scale(1.1);
+}
+
+.container:hover .text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.textDisplay {
+  margin: 20px auto;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+.title {
+  text-align: center;
+  color: #FFFFFF; /* Witte tekstkleur */
+  font-size: 2rem; /* 32px lettergrootte */
+  margin-bottom: 2rem; /* 32px marge aan de onderkant voor ruimte */
+  padding: 1rem 0; /* 16px padding boven en onder */
+  background-color: rgba(68, 38, 21, 0.877); /* Achtergrondkleur die past bij de container */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtiele schaduw voor diepte */
+  border-radius: 5px; /* Afgeronde hoeken voor de titelbalk */
+  max-width: 80%; /* Maximale breedte */
+  margin: 2rem auto 3rem; /* Centreren en marge instellen */
+}
+
+/* Voeg eventueel meer specifieke stijlen toe hieronder */
+
+.infoSection {
+  text-align: center;
+  color: #FFFFFF; /* Pas dit aan op basis van je thema */
+  background-color: rgba(68, 38, 21, 0.877); /* Pas dit aan op basis van je thema */
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+/*middenstukResidentieel.js*/
+.middle-section {
+  font-family: Arial, sans-serif;
+  color: #4A2E2E; /* Donkerbruin */
+  padding: 20px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.services-section, .faq-section {
+  margin-bottom: 40px;
+}
+
+.services-section h2, .faq-section h2 {
+  color: #4A2E2E;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.service {
+  background-color: #8B5742; /* Lichtbruin */
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.service h3 {
+  color: #FFF7EB;
+}
+
+.service p {
+  color: #FFF7EB;
+}
+
+.service:hover {
+  transform: translateY(-10px);
+}
+
+.accordion-item {
+  background-color: #D2B48C; /* Bruin */
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.accordion-title {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.accordion-title h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #4A2E2E;
+}
+
+.accordion-title span {
+  font-size: 25px;
+  color: #4A2E2E;
+}
+
+.accordion-content {
+  padding: 15px;
+  border-top: 1px solid #4A2E2E;
+}
+
+.accordion-content p {
+  margin: 0;
+  color: #4A2E2E;
+}

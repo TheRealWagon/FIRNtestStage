@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 import './opmaak.css';
-import afbeelding from './Images/LightmodeSlanted.png';
 import afbeelding1 from './Images/coin.png'
 import afbeelding2 from './Images/bolt.png';
 import afbeelding3 from './Images/cash.png';
-import tower from './Images/tower.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHandshake, faSun, faBatteryFull } from '@fortawesome/free-solid-svg-icons';
 
@@ -27,7 +25,8 @@ const MiddenstukIndustrieel = () => {
   };
 
   return (
-    <div className='kleur'>
+    
+    <div className='kleur'id='s1'>
       <div className="vierkanten-container">
         <div className="vierkant donker">
           <FontAwesomeIcon icon={faHandshake} size="3x" />

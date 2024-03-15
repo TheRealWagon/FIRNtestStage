@@ -24,7 +24,7 @@ const InteractivePage = () => {
 
   return (
     <animated.div style={fadeIn} className={styles.pageContainer}>
-      <div className={styles.banner}>Info</div>
+      <div className={styles.banner}id='s1'>Info</div>
 
       <div className={styles.servicesSection}>
         {services.map((service, index) => (
